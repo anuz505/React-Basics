@@ -1,13 +1,14 @@
-import Card from "./card"
+import TodoList from "./person"
+import Card from "./prevjsx files/card"
 
 function App() {
   
 
   return (
     <>
-       <Card />
-       <Card />
-       <Card />
+       <TodoList />
+       <TodoList />
+
     </>
   )
 }

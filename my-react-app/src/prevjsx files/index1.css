@@ -1,0 +1,28 @@
+.card{
+  max-width: 250px;
+  height: auto;
+  border:1px hsl(0, 4%, 64%) solid;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px hsl(0, 4%, 64%);
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+
+}
+.card .Card-image{
+  max-width: 60%;
+  width: 150px;
+  height: auto;
+  border-radius: 60%;
+}
+.card .card-texth{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  margin: 10px;
+}
+.card .card-textp{
+  font-family: 'Roboto', cursive;
+  font-size: 1 rem;
+  margin: 10px;
+}
