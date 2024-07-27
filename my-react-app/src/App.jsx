@@ -1,14 +1,14 @@
-import TodoList from "./person"
-import Card from "./prevjsx files/card"
 
+import Student from "../prop"
 function App() {
   
 
   return (
     <>
-       <TodoList />
-       <TodoList />
-
+       <Student Name="Anuj" age = {23} Student={true} />
+       <Student Name="prabin" age = {25} Student={true}></Student>
+       {/* default */}
+       <Student></Student>
     </>
   )
 }
