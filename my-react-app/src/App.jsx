@@ -1,14 +1,10 @@
-
-import Student from "../prop"
+import Usergretting from "../conditionalrendering"
 function App() {
   
 
   return (
     <>
-       <Student Name="Anuj" age = {23} Student={true} />
-       <Student Name="prabin" age = {25} Student={true}></Student>
-       {/* default */}
-       <Student></Student>
+      <Usergretting isLoggedin={true} username="Mobius505"/>
     </>
   )
 }
