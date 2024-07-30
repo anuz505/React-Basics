@@ -1,23 +1,30 @@
-// function without props
-function List(){
-    const fruits = [{id:1, name:"Apple", cal:95},
-                    {id:2, name:"Avacacdo", cal:159},
-                    {id:3, name:"Orange", cal:45},
-                    {id:4, name:"Banana", cal:105}
-    ]
+import propTypes from "prop-types"
+function List(props){
+    let itemsList = [...props.items];
      // albhabetic sorting
-     fruits.sort((a,b) => a.name.localeCompare(b.name))
+     itemsList.sort((a,b) => a.name.localeCompare(b.name))
     //numeric sorting
-    fruits.sort((a,b)=> a.cal - b.cal)
-    const Listitems = fruits.map(fruit => <li key={fruit.id}>{fruit.name}: &nbsp; {fruit.cal}</li>)
-    const lowcalorie_fruits = fruits.filter(fruit => fruit.cal < 100)
+    itemsList.sort((a,b)=> a.cal - b.cal)
+    const Listitems = itemsList.map(fruit => <li key={fruit.id}>{fruit.name}: &nbsp; {fruit.cal}</li>)
+    const lowcalorie_fruits = props.items.filter(fruit => fruit.cal < 100)
     const lowcalorie = lowcalorie_fruits.map(fruit => <li key={fruit.id}>{fruit.name}: &nbsp; {fruit.cal}</li>)
     return (
         <>
+            <h1>{props.category}</h1>
             <ol>{Listitems}</ol>
             <h1>Low Calorie Fruits</h1>
             <ul>{lowcalorie}</ul>
         </>
     )
 }
+
+List.propTypes = {
+    category  : propTypes.string,
+    items : propTypes.arrayOf(propTypes.shape({id:propTypes.number, name: propTypes.string, cal: propTypes.number}))
+}
+List.defaultProps= {
+    items:[],
+    category: "Category not given"
+    
+} 
 export default List
