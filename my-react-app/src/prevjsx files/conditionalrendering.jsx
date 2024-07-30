@@ -17,3 +17,17 @@ Usergretting.defaultProps = {
     username: "Guest"
 }
 export default Usergretting;
+
+//CSS
+// .Welcome{
+//     font-family: 'Bebas Neue', cursive;
+//     font-size: 3em;
+//     color: #333;
+//     background-color: #ffee32;
+// }
+// .login{
+//     font-family: 'Bebas Neue', cursive;
+//     font-size: 3em;
+//     color: #d6d6d6;
+//     background-color: #00509d;
+// }

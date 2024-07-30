@@ -1,10 +1,11 @@
-import Usergretting from "../conditionalrendering"
+import List from "../List";
+
 function App() {
   
 
   return (
     <>
-      <Usergretting isLoggedin={true} username="Mobius505"/>
+      <List />
     </>
   )
 }
