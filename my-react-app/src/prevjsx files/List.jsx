@@ -36,3 +36,16 @@ List.propTypes = {
 };
 
 export default List;
+
+//data
+// const fruits = [{id:1, name:"Apple", cal:95},
+//     {id:2, name:"Avacacdo", cal:159},
+//     {id:3, name:"Orange", cal:45},
+//     {id:4, name:"Banana", cal:105}
+// ]
+// const vegetables = [
+//   {id:1, name:"Carrot", cal:25},
+//   {id:2, name:"Broccoli", cal:55},
+//   {id:3, name:"Spinach", cal:23},
+//   {id:4, name:"Potato", cal:77}
+// ];
