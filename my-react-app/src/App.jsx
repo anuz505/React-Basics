@@ -1,11 +1,13 @@
-import RecipeList from './recipe.jsx';
-
+import Toolbar from "./adding_intractivity/01_restoevents"
 function App() {
   
 
   return (
     <>
-      <RecipeList />
+      <Toolbar playsomething={()=> alert("playing something")}
+                uploadsomething={()=> alert("Uploading deadpoolll")}> 
+
+      </Toolbar>
 
     </>
   )
