@@ -15,3 +15,8 @@ function Button({onClick,children}){
         <button onClick={onClick}>{children}</button>
     )
 }
+
+{/* <Toolbar playsomething={()=> alert("playing something")}
+uploadsomething={()=> alert("Uploading deadpoolll")}> 
+
+</Toolbar> */}
