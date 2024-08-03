@@ -1,10 +1,10 @@
-import Button from "./adding_intractivity/02_restoevents2"
+import Profilepic from "./adding_intractivity/03_resttoevents_eventobject"
 function App() {
   
 
   return (
     <>
-      <Button />
+      <Profilepic></Profilepic>
 
     </>
   )
