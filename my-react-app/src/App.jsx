@@ -1,11 +1,12 @@
-import Profilepic from "./adding_intractivity/03_resttoevents_eventobject"
+import Toolbar from "./adding_intractivity/04_eventstop_propagation.jsx";
+
 function App() {
   
 
   return (
     <>
-      <Profilepic></Profilepic>
-
+    
+      <Toolbar />
     </>
   )
 }
