@@ -1,12 +1,12 @@
-import Toolbar from "./adding_intractivity/04_eventstop_propagation.jsx";
+import Gallery from "./adding_intractivity/05_state.jsx"
 
 function App() {
   
 
   return (
     <>
-    
-      <Toolbar />
+    <Gallery />
+      
     </>
   )
 }
