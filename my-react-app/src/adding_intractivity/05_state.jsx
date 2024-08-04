@@ -13,6 +13,14 @@ export default function Gallery(){
             setIndex(index + 1)
         }
     }
+    const handleprev = ()=>{
+        if(index == 0){
+            setIndex(sculptureList.length -1)
+        }
+        else{
+            setIndex(index -1)
+        }
+    }
     const handleShowmore = ()=>{
         setShowmore(!showmore)
     }
@@ -27,6 +35,7 @@ export default function Gallery(){
             
             <h2>{index} of {sculptureList.length}</h2>
             <button onClick={handleindex}>Next</button>
+            <button onClick={handleprev}>Previous</button>
         </div>
     )
 }
