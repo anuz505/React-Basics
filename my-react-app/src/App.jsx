@@ -1,11 +1,11 @@
-import Form from "./adding_intractivity/06_state_snapshot"
+import RequestTracker from "./adding_intractivity/07_queuing.jsx"
 
 function App() {
   
 
   return (
     <>
-    <Form />
+    <RequestTracker />
       
     </>
   )
