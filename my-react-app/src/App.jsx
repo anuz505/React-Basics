@@ -1,11 +1,11 @@
-import Mycomp from "./adding_intractivity/05_state2.jsx"
+import Form from "./adding_intractivity/06_state_snapshot"
 
 function App() {
   
 
   return (
     <>
-    <Mycomp />
+    <Form />
       
     </>
   )
