@@ -1,4 +1,4 @@
-import Mycomponent from "./adding_intractivity/08_onchange"
+import Colorpicker from "./adding_intractivity/09_colorpicker.jsx"
 import '../src/index.css';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <Mycomponent />
+    <Colorpicker />
       
     </>
   )
