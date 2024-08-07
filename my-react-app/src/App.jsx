@@ -1,11 +1,12 @@
-import RequestTracker from "./adding_intractivity/07_queuing.jsx"
+import Mycomponent from "./adding_intractivity/08_onchange"
+import '../src/index.css';
 
 function App() {
   
 
   return (
     <>
-    <RequestTracker />
+    <Mycomponent />
       
     </>
   )
