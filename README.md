@@ -30,8 +30,6 @@ markdown
 Copy code
 # React Basics Learning 🌀
 
-![React Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
-
 Welcome to the **React Basics Learning Repository**! 🚀 This repository is a collection of my journey through learning React.js. Whether you're a fellow learner or just curious about my process, you're in the right place!
 
 ## 📂 Repository Overview
