@@ -1,12 +1,12 @@
 import '../src/index.css';
-import FormNestedObject from "./02_adding_intractivity/10_updatingNested.jsx"
+import Mylist from "./02_adding_intractivity/11_updatingArray.jsx"
 
 function App() {
   
 
   return (
     <>
-    <FormNestedObject />
+    <Mylist />
     
       
     </>
