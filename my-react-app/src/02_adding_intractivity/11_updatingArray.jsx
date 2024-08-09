@@ -10,11 +10,14 @@ export default function Mylist(){
 
     const handleKeyDown = (event) =>{
         if(event.key === "Enter"){
-            setArtist([
+            handleClick(event)
+        }
+    }
+    function handleClick(e){
+        setArtist([
                 ...artists,
                 {id:nextid++,name:name}
             ])
-        }
     }
     return(
         <>
@@ -23,11 +26,8 @@ export default function Mylist(){
                     value={name}
                     onChange={(e)=> setName(e.target.value)}
                     onKeyDown={handleKeyDown} />
-            <button onClick={()=>{
-                setArtist([
-                    ...artists,
-                    {id:nextid,name:name}
-                ]);
+            <button onClick={(e)=>{
+                handleClick(e)
             }}>
                 Add
             </button>
