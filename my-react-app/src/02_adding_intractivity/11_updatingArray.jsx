@@ -4,9 +4,14 @@ let nextid = 0;
 
 
 
+let initialArtists = [
+    { id: 0, name: 'Marta Colvin Andrade' },
+    { id: 1, name: 'Lamidi Olonade Fakeye'},
+    { id: 2, name: 'Louise Nevelson'},
+  ];
 export default function Mylist(){
     const [name,setName] = useState('')
-    const [artists,setArtist] = useState([])
+    const [artists,setArtist] = useState(initialArtists)
 
     const handleKeyDown = (event) =>{
         if(event.key === "Enter"){
