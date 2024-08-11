@@ -1,12 +1,12 @@
 import '../src/index.css';
-import List from "./02_adding_intractivity/11_updatingArraysrem.jsx"
+import DroppingCircles from "./02_adding_intractivity/11_updatingArray_position.jsx"
 
 function App() {
   
 
   return (
     <>
-    <List />
+    <DroppingCircles />
     
       
     </>
