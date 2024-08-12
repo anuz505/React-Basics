@@ -1,12 +1,12 @@
 import '../src/index.css';
-import ArtisitList from "./02_adding_intractivity/11_updatingArrayInsert.jsx"
+import BucketList from "./02_adding_intractivity/11_updatingArrayObjects.jsx"
 
 function App() {
   
 
   return (
     <>
-    <ArtisitList />
+    <BucketList />
     
       
     </>
