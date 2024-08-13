@@ -34,6 +34,11 @@ export default function CarList(){
     function handleCarModelChange(event){
         setCarModel(event.target.value)
     }
+    function handleKeydown(event){
+        if(event.key == "Enter"){
+            handleAddCarClick(event)
+        }
+    }
 
     return(
         <>
@@ -50,10 +55,10 @@ export default function CarList(){
                     value={carYear} 
                     onChange={handleYearChange}/>
             <br />
-            <input type="text" placeholder="Enter Car Name" value={carName} onChange={handleCarNameChange}/>
+            <input type="text" placeholder="Enter Car Name" value={carName} onChange={handleCarNameChange}onKeyDown={handleKeydown}/>
             <br />
-            <input type="text" placeholder="Enter Car model" value={carModel} onChange={handleCarModelChange}/>
-            <button onClick={handleAddCarClick}>Add Car</button>
+            <input type="text" placeholder="Enter Car model" value={carModel} onChange={handleCarModelChange} onKeyDown={handleKeydown}/>
+            <button onClick={handleAddCarClick} >Add Car</button>
         </>
     )
 }
