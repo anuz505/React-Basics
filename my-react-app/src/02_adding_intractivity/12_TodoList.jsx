@@ -24,17 +24,23 @@ export default function TodoList(){
         }))
     }
 
+    function handleKeydown(event){
+        if(event.key == 'Enter'){
+            handleNewTask()
+        }
+    }
 
     function handleNewTask(){
         setTask([
             ...tasks,
             {id:nextId++,taskTitle:newTask}
         ])
+        setNewTask("");
     }
     return(
         <>
             <h1>TodoList</h1>
-            <input type="text" value={newTask} onChange={(e)=> setNewTask(e.target.value)} />
+            <input type="text" value={newTask} onKeyDown={handleKeydown} onChange={(e)=> setNewTask(e.target.value)} />
             <button onClick={handleNewTask}>Add task</button>
             <TaskList 
                 tasks={tasks}
