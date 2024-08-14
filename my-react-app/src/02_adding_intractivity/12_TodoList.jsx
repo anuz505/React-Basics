@@ -42,6 +42,7 @@ export default function TodoList(){
             <h1>TodoList</h1>
             <input type="text" value={newTask} onKeyDown={handleKeydown} onChange={(e)=> setNewTask(e.target.value)} />
             <button onClick={handleNewTask}>Add task</button>
+            <h4 className="priority">Priority</h4>
             <TaskList 
                 tasks={tasks}
                 onToggle={handleToggleClick}
@@ -49,10 +50,29 @@ export default function TodoList(){
         </>
     )
 
+
+
+
     function TaskList({tasks, onToggle}){
+        
+    const goUp = (index)=> {
+        if(index == 0){return}
+        else{
+        const newtaskfn =  [...tasks];
+        [newtaskfn[index-1],newtaskfn[index]] = [newtaskfn[index],newtaskfn[index-1]];
+        setTask(newtaskfn);}
+    }
+    const goDown = (index)=> {
+        if(index == tasks.length -1){return}
+        else{
+            const newtaskfn = [...tasks];
+            [newtaskfn[index + 1],newtaskfn[index]] = [newtaskfn[index],newtaskfn[index+1]];
+            setTask(newtaskfn);
+        }
+    }
         return(
             <ul>
-                {tasks.map((task)=>{
+                {tasks.map((task,index)=>{
                     return(
                     <li key={task.id}>
                         <label>
@@ -63,6 +83,8 @@ export default function TodoList(){
                                     } />
                             {task.taskTitle}
                         </label>
+                        <button onClick={() => goUp(index)}>Up</button>
+                        <button onClick={() => goDown(index)}>Down</button>
                         <button onClick={()=>{
                             setTask(
                                 tasks.filter(t =>
