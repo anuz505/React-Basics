@@ -2,13 +2,23 @@
 ul {
     list-style-type: none;
     padding: 0;
+    width: 80vw;
   }
   
   li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
   }
+  li:hover{
+    border: 1px solid black;
+    transform: translateX(10px);
+    scale: 1.1;
+    margin-left: 50px;
+    
+  }
+  
   
   label {
     flex-grow: 1;
