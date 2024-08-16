@@ -1,0 +1,7 @@
+.picture-active{
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.background-active{
+    border: 2px solid red;
+}

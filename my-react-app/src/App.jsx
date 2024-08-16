@@ -1,12 +1,12 @@
 import '../src/index.css';
-import Form from "./03_managing_state/03_form.jsx"
+import Picture from "./03_managing_state/practice.jsx"
 
 function App() {
   
 
   return (
     <>
-    <Form />
+    <Picture />
     
       
     </>

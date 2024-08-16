@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./from.css"
 export default function Form(){
 
     const [answer,setAnswer] = useState("");
