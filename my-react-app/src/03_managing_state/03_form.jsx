@@ -52,13 +52,20 @@ export default function Form(){
 
     return(
         <>
+            <div className="card">
             <h2>Quiz</h2>
             <p>What is your father put is your name? </p>
             <form onSubmit={handleSubmit}>
                 <input onChange={handleTextArea}  onKeyDown={handleKeyDown} value={answer} disabled={status === "submitting"}></input>
                 <button disabled={status === "submitting" || answer.length === 0}>Submit</button>
+                {status === "submitting" && (
+                <>
+                    <iframe src="https://giphy.com/embed/3oEjI6SIIHBdRxXI40" width="150px" height="150px" style={{}} frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                </>
+                )}
                 {error !== null && <p>{error.message}</p>}
             </form>
+            </div>
         </>
     )
 

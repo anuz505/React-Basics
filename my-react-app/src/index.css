@@ -1,0 +1,51 @@
+/* index.css */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card h1 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.card form {
+    margin-top: 20px;
+}
+
+.card input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.card .giphy-embed {
+    margin-top: 20px;
+}
+
+.card p.error {
+    color: red;
+}
