@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../02_adding_intractivity/todolist.css"
 
 const initalTodoList = [
     {id:0, taskTitle:"Learn react",seen:true},

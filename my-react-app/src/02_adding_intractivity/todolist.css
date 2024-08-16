@@ -1,0 +1,57 @@
+/* Style for the task list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 80vw;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  li:hover{
+    border: 1px solid black;
+    transform: translateX(10px);
+    scale: 1.1;
+    margin-left: 5%;
+    
+  }
+  
+  
+  label {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+  .priority{
+    flex-grow: 1;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 10%;
+  }

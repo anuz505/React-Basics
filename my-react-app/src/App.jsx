@@ -1,12 +1,12 @@
 import '../src/index.css';
-import TodoList from "./02_adding_intractivity/12_TodoList.jsx"
+import MainForm from "./03_managing_state/from2.jsx"
 
 function App() {
   
 
   return (
     <>
-    <TodoList />
+    <MainForm />
     
       
     </>
