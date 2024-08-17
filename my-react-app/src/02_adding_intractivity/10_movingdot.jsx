@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import TodoList from "./12_TodoList.jsx";
 export default function Movingdot(){
     
     const [position, setPosition] = useState({
@@ -14,12 +14,15 @@ export default function Movingdot(){
         })
     }
     return(
+
         <div onPointerMove={e => handlePosition(e)}
         style={{position:"relative",
-                height:"100vh",
-                width:"100vw"  
+                height:"95vh",
+                width:"95vw"  
         }}
         >
+            <TodoList />
+
             <div style={{
                 position:"absolute",
                 background: "red",

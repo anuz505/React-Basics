@@ -1,8 +1,23 @@
 /* Existing animation */
+body{
+  background-color: #219ebc;
+  font-family: 'bebas neue';
+}
+.quote{
+  font-family: 'roboto';
+  font-size: 13px;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size: 5em;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
 li:hover {
   transform: translateX(10px) scale(1.02);
-  transition: transform 0.3s ease-in-out, max-width 0.3s ease-in-out;
-  max-width: 95%; /* Adjust this value as needed */
+  transition: ease ;
 }
 
 /* New styles */
@@ -37,15 +52,18 @@ button {
   margin-left: 10px;
   padding: 5px 10px;
   border: none;
-  background-color: #007bff;
+  background-color: #00509d;
   color: white;
   cursor: pointer;
   border-radius: 3px;
   transition: background-color 0.3s ease;
+  font-family: 'roboto';
 }
 
 button:hover {
   background-color: #0056b3;
+  font-family: 'bebas neue';
+  font-size: 2rem;
 }
 
 button:disabled {
@@ -71,6 +89,7 @@ p {
   display: flex;
   justify-content: flex-end;
   margin-right: 12%;
+  font-family: 'roboto';
 }
 
 

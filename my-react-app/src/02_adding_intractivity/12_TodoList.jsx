@@ -39,6 +39,7 @@ export default function TodoList(){
     return(
         <>
             <h1>TodoList</h1>
+            <p className="quote">Get stuff done, one task at a time. 💪 What's on your plate today?</p>
             <input type="text" value={newTask} onChange={(e)=> setNewTask(e.target.value)} />
             <button onClick={handleNewTask}>Add task</button>
             <h4 className="priority">Priority</h4>
