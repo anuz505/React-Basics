@@ -13,6 +13,8 @@ export default function TodoList(){
 
     const [tasks,setTask] = useState(initalTodoList);
     const [newTask, setNewTask] = useState('');
+    const [isEditing,setisEditing] = useState(false);
+    const [editingTaskId, setEditingTaskId] = useState(null);
 
     function handleToggleClick(taskID,nextSeen){
         setTask(tasks.map(task =>{
@@ -25,11 +27,7 @@ export default function TodoList(){
         }))
     }
 
-    function handleKeydown(event){
-        if(event.key == 'Enter'){
-            handleNewTask()
-        }
-    }
+
 
     function handleNewTask(){
         setTask([
@@ -41,7 +39,7 @@ export default function TodoList(){
     return(
         <>
             <h1>TodoList</h1>
-            <input type="text" value={newTask} onKeyDown={handleKeydown} onChange={(e)=> setNewTask(e.target.value)} />
+            <input type="text" value={newTask} onChange={(e)=> setNewTask(e.target.value)} />
             <button onClick={handleNewTask}>Add task</button>
             <h4 className="priority">Priority</h4>
             <TaskList 
@@ -86,6 +84,28 @@ export default function TodoList(){
                         </label>
                         <button onClick={() => goUp(index)}>Up</button>
                         <button onClick={() => goDown(index)}>Down</button>
+                        {isEditing && editingTaskId === task.id ? 
+                        (<>
+                            <input 
+                                type="text"
+                                value={task.taskTitle}
+                                onChange={(e)=>{
+                                    const updatedTasks = tasks.map(t=>
+                                        t.id === task.id ? {...t , taskTitle : e.target.value} : t
+                                    );
+                                    setTask(updatedTasks)
+                                }}
+                            />
+                            </>
+                        ): (<></>)}
+                         <button
+                            onClick={() => {
+                                setisEditing(!isEditing);
+                                setEditingTaskId(task.id);
+                            }}
+                        >
+                            Edit
+                        </button>
                         <button onClick={()=>{
                             setTask(
                                 tasks.filter(t =>
