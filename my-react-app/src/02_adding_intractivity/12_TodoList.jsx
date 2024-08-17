@@ -98,7 +98,7 @@ export default function TodoList(){
                             />
                             </>
                         ): (<></>)}
-                         <button
+                         <button className="edit"
                             onClick={() => {
                                 setisEditing(!isEditing);
                                 setEditingTaskId(task.id);
@@ -106,7 +106,7 @@ export default function TodoList(){
                         >
                             Edit
                         </button>
-                        <button onClick={()=>{
+                        <button className="delete" onClick={()=>{
                             setTask(
                                 tasks.filter(t =>
                                     t.id !== task.id
