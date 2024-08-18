@@ -1,14 +1,12 @@
 import '../src/index.css';
-import Movingdot from "./02_adding_intractivity/10_movingdot.jsx"
-import TodoList from "./02_adding_intractivity/12_TodoList.jsx"
+import Feedback from "./03_managing_state/04_structure.jsx"
 
 function App() {
   
 
   return (
     <>
-    <Movingdot />
-      
+      <Feedback />
     </>
   )
 }
