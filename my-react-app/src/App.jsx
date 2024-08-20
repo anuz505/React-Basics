@@ -1,12 +1,12 @@
 import '../src/index.css';
-import Menu from "./03_managing_state/04_structure1.jsx"
+import Accordian from "./03_managing_state/05_sharing_states.jsx"
 
 function App() {
   
 
   return (
     <>
-      <Menu />
+      <Accordian />
     </>
   )
 }
