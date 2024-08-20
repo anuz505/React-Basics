@@ -1,14 +1,12 @@
-import '../src/index.css';
-import Accordian from "./03_managing_state/05_sharing_states.jsx"
+import "../src/index.css";
+import FilterableList from "./03_managing_state/05_filterableList.jsx";
 
 function App() {
-  
-
   return (
     <>
-      <Accordian />
+      <FilterableList />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
