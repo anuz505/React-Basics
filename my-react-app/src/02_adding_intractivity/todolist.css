@@ -1,23 +1,23 @@
 /* Existing animation */
-body{
+body {
   background-color: #62b6cb;
-  font-family: 'bebas neue';
 }
-.quote{
-  font-family: 'roboto';
+.quote {
+  font-family: "roboto";
   font-size: 13px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
-h1{
+h1 {
   font-size: 5em;
   color: #333;
   margin-top: 50px;
   margin-bottom: 0;
+  font-family: "Drunk & Proud";
 }
 li:hover {
   transform: translateX(10px) scale(1.02);
-  transition: ease ;
+  transition: ease;
 }
 
 /* New styles */
@@ -36,6 +36,7 @@ li {
   border-radius: 5px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Ink Free";
 }
 
 label {
@@ -57,12 +58,12 @@ button {
   cursor: pointer;
   border-radius: 3px;
   transition: background-color 0.3s ease;
-  font-family: 'roboto';
+  font-family: "Bauhaus 93";
 }
 
 button:hover {
   background-color: #0056b3;
-  font-family: 'bebas neue';
+  font-family: "bebas neue";
   font-size: 2rem;
 }
 
@@ -89,9 +90,8 @@ p {
   display: flex;
   justify-content: flex-end;
   margin-right: 12%;
-  font-family: 'roboto';
+  font-family: "roboto";
 }
-
 
 /* For tablets and larger screens */
 @media (min-width: 768px) {

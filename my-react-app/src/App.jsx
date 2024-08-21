@@ -1,10 +1,10 @@
 import "../src/index.css";
-import FilterableList from "./03_managing_state/05_filterableList.jsx";
+import Scoreboard from "./03_managing_state/PreservingAndResetingState.jsx";
 
 function App() {
   return (
     <>
-      <FilterableList />
+      <Scoreboard />
     </>
   );
 }

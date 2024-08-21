@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { foods, filterItems } from "./data.js";
+import { foods, filterItems } from "./05_filterablelist.js";
 
 export default function FilterableList() {
   const [query, setQuery] = useState("");
