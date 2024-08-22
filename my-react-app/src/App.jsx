@@ -1,10 +1,10 @@
 import "../src/index.css";
-import Scoreboard from "./03_managing_state/ResetingStatewithKeys.jsx";
+import MyComponent from "./03_managing_state/06_useEffecthook.jsx";
 
 function App() {
   return (
     <>
-      <Scoreboard />
+      <MyComponent />
     </>
   );
 }
