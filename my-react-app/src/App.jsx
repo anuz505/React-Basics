@@ -1,5 +1,5 @@
 import "../src/index.css";
-import MyComponent from "./03_managing_state/06_useEffecthook.jsx";
+import MyComponent from "./03_managing_state/06_useEffecthook1.jsx";
 
 function App() {
   return (
