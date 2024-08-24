@@ -1,10 +1,10 @@
 import "../src/index.css";
-import Clock from "./03_managing_state/06_clock.jsx";
+import ComponentA from "./03_managing_state/usecontext/ComponentA.jsx";
 
 function App() {
   return (
     <>
-      <Clock />
+      <ComponentA />
     </>
   );
 }

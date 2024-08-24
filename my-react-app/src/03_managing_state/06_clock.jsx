@@ -15,7 +15,7 @@ export default function Clock() {
     let hours = time.getHours();
     let minutes = time.getMinutes();
     let seconds = time.getSeconds();
-    const meridim = hours > 12 ? "PM" : "AM";
+    const meridim = hours >= 12 ? "PM" : "AM";
     return `${padZero(hours)} : ${padZero(minutes)} : ${padZero(
       seconds
     )} ${meridim} `;
