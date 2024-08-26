@@ -1,10 +1,10 @@
 import "../src/index.css";
 
-import USEref from "./03_managing_state/07_useRef1.jsx";
+import Stopwatch from "./Projects/stopwatch.jsx";
 function App() {
   return (
     <>
-      <USEref />
+      <Stopwatch />
     </>
   );
 }
