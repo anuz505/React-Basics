@@ -1,10 +1,10 @@
 import "../src/index.css";
 
-import UserefPractice from "./03_managing_state/useReff.jsx";
+import USEref from "./03_managing_state/07_useRef1.jsx";
 function App() {
   return (
     <>
-      <UserefPractice />
+      <USEref />
     </>
   );
 }
