@@ -1,10 +1,10 @@
 import "../src/index.css";
 
-import Stopwatch from "./Projects/stopwatch.jsx";
+import Mem0 from "./03_managing_state/usemem0/08_useMEmo.jsx";
 function App() {
   return (
     <>
-      <Stopwatch />
+      <Mem0 />
     </>
   );
 }
