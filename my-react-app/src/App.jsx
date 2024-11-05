@@ -1,10 +1,10 @@
 import "../src/index.css";
-
-import Mem0 from "./03_managing_state/usemem0/08_useMEmo.jsx";
+import TodoList from "./Projects/12_TodoList.jsx";
+import Timer from "./03_managing_state/try/try.jsx";
 function App() {
   return (
     <>
-      <Mem0 />
+      <Timer />
     </>
   );
 }
