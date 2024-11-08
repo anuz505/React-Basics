@@ -59,3 +59,23 @@ signContract({
   age: 22,
   address: "Kathmandu",
 });
+
+//Another generic example
+
+class StorageContainer<T> {
+  private contents: T[];
+
+  constructor() {
+    this.contents = [];
+  }
+  addItem(item: T): void {
+    this.contents.push(item);
+  }
+  getItem(index: number): T {
+    return this.contents[index];
+  }
+}
+const userNameStorage = new StorageContainer<string>();
+userNameStorage.addItem("Anuj Bhandari");
+userNameStorage.addItem("asdadf");
+console.log(userNameStorage.getItem(0));

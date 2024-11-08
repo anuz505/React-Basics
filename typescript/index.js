@@ -23,7 +23,7 @@ var x;
 var y;
 var a;
 function signContract(employee) {
-    console.log("The contract has been signed with ".concat(employee.name, " with a credit score of ").concat(employee.creditScore, " and the adress is ").concat(employee.address));
+    console.log("The contract has been signed with ".concat(employee.name, " with a credit score of ").concat(employee.creditScore, " and the address is ").concat(employee.address));
 }
 signContract({
     name: "Anuj",
@@ -33,3 +33,20 @@ signContract({
     age: 22,
     address: "Kathmandu",
 });
+//Another generic example
+var StorageContainer = /** @class */ (function () {
+    function StorageContainer() {
+        this.contents = [];
+    }
+    StorageContainer.prototype.addItem = function (item) {
+        this.contents.push(item);
+    };
+    StorageContainer.prototype.getItem = function (index) {
+        return this.contents[index];
+    };
+    return StorageContainer;
+}());
+var userNameStorage = new StorageContainer();
+userNameStorage.addItem("Anuj Bhandari");
+userNameStorage.addItem("asdadf");
+console.log(userNameStorage.getItem(0));
