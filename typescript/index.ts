@@ -33,3 +33,29 @@ class Observator<T> {
 let x: Observator<number>;
 let y: Observator<string>;
 let a: Observator<Family>;
+
+interface BusinnesOwner {
+  name: string;
+  email: string;
+  creditScore: number;
+}
+interface UserIdentity {
+  id: number;
+  age: number;
+  address: string;
+}
+type Employee = BusinnesOwner & UserIdentity;
+
+function signContract(employee: Employee) {
+  console.log(
+    `The contract has been signed with ${employee.name} with a credit score of ${employee.creditScore} and the address is ${employee.address}`
+  );
+}
+signContract({
+  name: "Anuj",
+  email: "anujb346",
+  creditScore: 202,
+  id: 1,
+  age: 22,
+  address: "Kathmandu",
+});
