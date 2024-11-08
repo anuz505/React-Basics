@@ -25,3 +25,11 @@ arr1.push(22);
 //to make it optionalwe use
 type mySecondList = [number?, string?, boolean?];
 const arr2: mySecondList = [22];
+
+//Generics
+class Observator<T> {
+  constructor(public value: T) {}
+}
+let x: Observator<number>;
+let y: Observator<string>;
+let a: Observator<Family>;
