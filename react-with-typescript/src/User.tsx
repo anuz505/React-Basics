@@ -1,18 +1,17 @@
-import React from "react";
-
-interface UserProps {
-  name: string;
-  age: number;
-}
-
+import React, { useContext } from "react";
+import { UserProps, UserContext } from "./UserContext";
 export default function User(props: UserProps) {
   const [userInfo, setUserInfo] = React.useState<boolean | null>(false);
   const [userBio, setUserBio] = React.useState<string | null>(null);
+  const { user, addUser } = useContext(UserContext);
   const toggleInfo = () => {
     setUserInfo((prev) => !prev);
   };
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setUserBio(event.target.value);
+  };
+  const handleAddUser = () => {
+    addUser({ name: props.name, age: props.age });
   };
   return (
     <div>
@@ -27,6 +26,7 @@ export default function User(props: UserProps) {
         </>
       )}
       <button onClick={toggleInfo}>{userInfo ? "Hide" : "See More"}</button>
+      <button onClick={handleAddUser}>Add user</button>
     </div>
   );
 }
