@@ -3,7 +3,8 @@ import { ThreeDCardDemo } from "./new.tsx";
 function App() {
   return (
     <>
-      <ThreeDCardDemo />
+      <ThreeDCardDemo cardbodyp="hello" cardItemp="Hello" />
+      <ThreeDCardDemo cardbodyp="Trees and nature " cardItemp="Tree" />
     </>
   );
 }
